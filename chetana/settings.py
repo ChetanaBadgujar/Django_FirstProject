@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
+from threading import local
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-lsdo%q4raom0d_qbyyw-a6im#u0x05j1tx_u(3es(^@h*7k!q2'
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: don't run with debug turned on in production!   
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','django-project-548.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1','project022.herokuapp.com']
 
 
 # Application definition
@@ -136,5 +137,6 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 
